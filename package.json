@@ -1,10 +1,6 @@
 {
   "author": {
-    "name": "Ray Nicholus",
-    "url": "http://raynicholus.com"
-  },
-  "bugs": {
-    "url": "https://github.com/FineUploader/fine-uploader-wrappers/issues"
+    "name": "igeko"
   },
   "dependencies": {
     "object-assign": "4.1.0"
@@ -38,7 +34,7 @@
   "engines": {
     "node": ">=5.0.0"
   },
-  "homepage": "https://github.com/FineUploader/fine-uploader-wrappers#readme",
+  "homepage": "https://github.com/igeko/igeko-fine-uploader-wrappers",
   "keywords": [
     "file",
     "blob",
@@ -48,13 +44,13 @@
   ],
   "license": "MIT",
   "main": "traditional.js",
-  "name": "fine-uploader-wrappers",
+  "name": "igeko-fine-uploader-wrappers",
   "peerDependencies": {
     "fine-uploader": ">=5.14.2 <6.0.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FineUploader/fine-uploader-wrappers.git"
+    "url": "git+https://github.com/igeko/igeko-fine-uploader-wrappers.git"
   },
   "scripts": {
     "build": "rm -rf lib && mkdir -p lib && cp -pR src/ lib && babel lib --out-dir lib",
