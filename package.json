@@ -1,14 +1,14 @@
 {
-  "name": "fine-uploader-wrappers",
+  "name": "igeko-fine-uploader-wrappers",
   "version": "1.1.0",
   "license": "MIT",
-  "description": "Fine Uploader core ES6 class wrappers that provide additional features.",
-  "author":     {
-    "name": "Ray Nicholus",
-    "url": "http://raynicholus.com"
+  "description": "File uploader wrappers Patched by geko ",
+  "author": "Ray Nicholus (http://raynicholus.com)",
+  "homepage": "https://github.com/igeko/igeko-fine-uploader-wrappers#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igeko/igeko-fine-uploader-wrappers.git"
   },
-  "homepage": "https://github.com/FineUploader/fine-uploader-wrappers#readme",
-  "repository": "https://github.com/FineUploader/fine-uploader-wrappers",
   "keywords": [
     "file",
     "blob",
@@ -49,7 +49,7 @@
     "node": ">=5.0.0"
   },
   "peerDependencies": {
-        "fine-uploader": ">=5.14.2 <6.0.0"
+    "fine-uploader": ">=5.14.2 <6.0.0"
   },
   "scripts": {
     "build": "rm -rf lib && mkdir -p lib && cp -pR src/ lib && babel lib --out-dir lib",
@@ -58,5 +58,8 @@
     "push-to-npm": "cp package.json README.md LICENSE lib && (cd lib ; npm publish --tag next)",
     "release": "npm run test && npm run build && npm run push-to-npm",
     "test": "npm run lint && if [ $CI ]; then karma start config/karma.conf; else karma start config/karma.dev.conf; fi"
+  },
+  "bugs": {
+    "url": "https://github.com/igeko/igeko-fine-uploader-wrappers/issues"
   }
 }
