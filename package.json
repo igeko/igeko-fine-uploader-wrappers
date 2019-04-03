@@ -60,5 +60,5 @@
     "release": "npm run test && npm run build && npm run push-to-npm",
     "test": "npm run lint && if [ $CI ]; then karma start config/karma.conf; else karma start config/karma.dev.conf; fi"
   },
-  "version": "1.0.1"
+  "version": "1.0.2"
 }
